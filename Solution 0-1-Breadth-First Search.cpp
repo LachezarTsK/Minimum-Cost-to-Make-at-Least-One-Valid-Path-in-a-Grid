@@ -27,11 +27,11 @@ public:
     int minCost(vector<vector<int>>& grid) {
         rows = grid.size();
         columns = grid[0].size();
-        return dijkstraSearchForMinCostPath(grid);
+        return _0_1_BreadthFirstSearchForMinCostPath(grid);
     }
 
 private:
-    int dijkstraSearchForMinCostPath(const vector<vector<int>>& grid) {
+    int _0_1_BreadthFirstSearchForMinCostPath(const vector<vector<int>>& grid) {
 
         deque<Point> deque;
         vector<vector<int>> minCostPath(rows, vector<int>(columns, INT_MAX));
