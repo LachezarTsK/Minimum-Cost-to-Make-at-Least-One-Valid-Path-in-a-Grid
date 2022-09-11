@@ -4,9 +4,7 @@ import java.util.PriorityQueue;
 
 public class Solution {
 
-    private record Point(int row, int column, int costFromStart) {
-
-    }
+    private record Point(int row, int column, int costFromStart) {}
 
     private static final int RIGHT_SIGN = 1;
     private static final int LEFT_SIGN = 2;
